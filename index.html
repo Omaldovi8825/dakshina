@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+        .imag{
+            width: 400px;
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="p-5 container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-4 text-center">
+                <img src="./asstes/img/logo.jpeg" alt="logo daxina" width="200">
+            </div>
+            <div class="col-12 col-md-4">
+                <h1 class="text-center">Solicitud de presupestos</h1>
+            </div>
+            <div class="col-12 col-md-4">
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-4">
+        <form class="row">
+            <div class="col-12 col-md-6 mb-3">
+                <label class="form-label">Proveedor</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <!-- 18 -->
+                <label class="form-label">Clabe interbancaria</label>
+                <input type="number" class="form-control" placeholder="Introduce los 18 dígitos de la cuenta bancaria">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label class="form-label">Nombre del banco</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label class="form-label">Titular de la cuenta</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label class="form-label">RFC del proveedor</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <!-- 1 o 2 -->
+                <label class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label class="form-label">Tipo de gasto</label>
+                <select class="form-control">
+                    <option value="">Programación</option>
+                    <option value="">Reembolso</option>
+                    <option value="">Pago de salarios</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <!-- 1 o 2 -->
+                <label class="form-label">Descripción del gasto</label>
+                <textarea class="form-control"></textarea>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label class="form-label">Partida presupuestal</label>
+                <!-- Dinámico -->
+                <select class="form-control">
+                    <option value="">Algo</option>
+                    <option value="">Reembolso</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label class="form-label">Importe</label>
+                <input type="number" class="form-control" placeholder="importe neto a trasferir">
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label class="form-label">Comprobante</label>
+                <select class="form-control">
+                    <option value="">Factura</option>
+                    <option value="">Recibo de asimilados</option>
+                    <option value="">Recibo de honorarios</option>
+                    <option value="">Invoice</option>
+                    <option value="">Recibo no deducible</option>
+                </select>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label class="form-label">Comporbaciones</label>
+                <input type="file" class="form-control" onchange="cargarArchivo(this)">
+            </div>
+        </form>
+    </div>
+
+    <!-- <img id="fotillo" src="./asstes/img/logo.jpeg" alt="" class="imag"> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script>
+        function cargarArchivo(inp){
+            // const [file] = inp.files
+            // const fr = new FileReader();
+            // fr.onload = () => document.querySelector('#fotillo').src = fr.result;
+            // fr.readAsDataURL(file);
+        }
+    </script>
+</body>
+</html>
